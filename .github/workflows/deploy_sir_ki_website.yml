@@ -36,7 +36,7 @@ jobs:
 
       - name: Create Release with Deployed URL
         run: |
-          DEPLOY_URL="https://Ganeshhdyp.github.io/e-learning/"
+          DEPLOY_URL="https://ganeshhdyp.github.io/e-learning/"
           TAG_NAME="deploy-$(date +'%Y-%m-%d-%H-%M')"
           gh release create "$TAG_NAME" --title "Deployment: $TAG_NAME" --notes "Deployed to: $DEPLOY_URL"
         env:

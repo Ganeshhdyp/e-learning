@@ -416,7 +416,7 @@ import { fileURLToPath } from "url";
 var __filename = fileURLToPath(import.meta.url);
 var __dirname = dirname(__filename);
 var vite_config_default = defineConfig({
-  base: "/your-repository-name/",
+  base: "/e-learning/",
   // 👈 Replace with your actual GitHub repo name
   plugins: [
     react(),

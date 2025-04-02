@@ -9,6 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 export default defineConfig({
+  base: "/your-repository-name/", // 👈 Replace with your actual GitHub repo name
   plugins: [
     react(),
     runtimeErrorOverlay(),

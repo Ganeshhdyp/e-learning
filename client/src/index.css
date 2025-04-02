@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+  
+  h1 {
+    @apply text-3xl font-bold md:text-4xl;
+  }
+  
+  h2 {
+    @apply text-2xl font-bold md:text-3xl;
+  }
+  
+  h3 {
+    @apply text-xl font-bold md:text-2xl;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-100 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-blue-200 rounded-full hover:bg-blue-300 transition-colors;
+  }
+}
+
+@layer components {
+  .card-hover {
+    @apply transition-all duration-200 hover:shadow-md hover:border-blue-200;
+  }
+  
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-indigo-600;
+  }
+  
+  .gradient-bg {
+    @apply bg-gradient-to-r from-blue-600 to-indigo-600;
+  }
+  
+  .input-icon {
+    @apply absolute left-3 top-2.5 h-5 w-5 text-gray-400;
+  }
+  
+  .progress-bar {
+    @apply h-2 rounded-full bg-slate-200 overflow-hidden;
+  }
+  
+  .progress-bar-fill {
+    @apply h-full rounded-full bg-gradient-to-r from-blue-500 to-indigo-500;
+  }
+}
